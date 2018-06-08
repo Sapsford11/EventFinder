@@ -6,13 +6,13 @@ class SearchBar extends React.Component {
     super(props);
 
     this.state = {
-      q: '',
+      term: '',
       address: '',
       date: '',
       sortBy: 'best'
     };
 
-    this.handleQChange = this.handleQChange.bind(this);
+    this.handleTermChange = this.handleTermChange.bind(this);
     this.handleAddressChange = this.handleAddressChange.bind(this);
     this.handleDateChange = this.handleDateChange.bind(this);
     this.handleSortByChange = this.handleSortByChange.bind(this);
@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
   }
 
   handleTermChange(event) {
-    this.setState({q: event.target.value});
+    this.setState({term: event.target.value});
   }
 
   handleAddressChange(event) {
@@ -49,7 +49,7 @@ class SearchBar extends React.Component {
   }
 
   handleSearch(event) {
-    this.props.searchEventBrite(this.state.q, this.state.address, this.state.date, this.state.sortBy);
+    this.props.searchEventBrite(this.state.term, this.state.address, this.state.date, this.state.sortBy);
 
     event.preventDefault();
   }
@@ -70,7 +70,7 @@ class SearchBar extends React.Component {
       <div className="Entire-Search-Wrapper">
         <div className="SearchBar">
         <div className="SearchBar-fields">
-          <input className="first-search-bar" placeholder="Enter Keyword(s)" onChange={this.handleQChange} />
+          <input className="first-search-bar" placeholder="Enter Keyword(s)" onChange={this.handleTermChange} />
           <input placeholder="Where?" onChange={this.handleAddressChange} />
           <select name="All Dates" onChange={this.handleDateChange}>
             <option value="today" >Today</option>
