@@ -2,8 +2,8 @@
 const myToken = '2OHPMQAPHJJPBATY6ECJ';
 
 const EventBrite = {
-  search(term, address, date, sortBy) {
-    return fetch(`https://cors-anywhere.herokuapp.com/http://www.eventbriteapi.com/v3/events/search?token=2OHPMQAPHJJPBATY6ECJ&q=${term}&location.address=${address}&start_date.keyword=${date}&sort_by=${sortBy}`, {
+  search(q, address, date, sortBy) {
+    return fetch(`https://cors-anywhere.herokuapp.com/http://www.eventbriteapi.com/v3/events/search?token=2OHPMQAPHJJPBATY6ECJ&q=${q}&location.address=${address}&start_date.keyword=${date}&sort_by=${sortBy}`, {
       headers: {
         Authorization: `Bearer ${myToken}`
       }
