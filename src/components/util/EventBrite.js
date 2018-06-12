@@ -14,7 +14,7 @@ const EventBrite = {
       if (jsonResponse.events) {
         return jsonResponse.events.map(event => ({
           id: event.venue_id,
-          logo: event.logo.original.url,
+          logo: event.logo.url,
           date: event.start.local,
           name: event.name.text,
           url: event.url
