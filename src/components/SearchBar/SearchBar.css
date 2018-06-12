@@ -66,6 +66,25 @@
   background-color: #e13f4f;
 }
 
+.Sort-submit {
+  text-align: center;
+  font-size: 18px;
+}
+
+.Sort-submit a {
+  border-radius: 4px;
+  padding: .36rem .85rem;
+  background-color: #fa4658;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color .5s;
+}
+
+.Sort-submit a:hover {
+  cursor: pointer;
+  background-color: #e13f4f;
+}
+
 .sort-by-options ul {
   display: flex;
   justify-content: center;

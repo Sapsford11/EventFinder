@@ -7,14 +7,13 @@ class Event extends React.Component {
     return (
       <div className="Event">
           <div className="image-container">
-            <img src={this.props.event.logo_id} alt=''/>
+            <a href={this.props.event.url}target="_blank" rel="noopener noreferrer"><img src={this.props.event.logo} alt=''/></a>
           </div>
           <div className="event-card">
-            <p className="date-time">{this.props.event.start},</p>
+            <p className="date-time">{this.props.event.date}</p>
             <div className="event-title">
               {this.props.event.name}
             </div>
-              <p className="event-address">{this.props.event.location.address}</p>
           </div>
       </div>
     );

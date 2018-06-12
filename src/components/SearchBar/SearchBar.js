@@ -7,13 +7,13 @@ class SearchBar extends React.Component {
 
     this.state = {
       term: '',
-      address: '',
+      location: '',
       date: '',
       sortBy: 'best'
     };
 
     this.handleTermChange = this.handleTermChange.bind(this);
-    this.handleAddressChange = this.handleAddressChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
     this.handleDateChange = this.handleDateChange.bind(this);
     this.handleSortByChange = this.handleSortByChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
@@ -40,8 +40,8 @@ class SearchBar extends React.Component {
     this.setState({term: event.target.value});
   }
 
-  handleAddressChange(event) {
-    this.setState({address: event.target.value});
+  handleLocationChange(event) {
+    this.setState({location: event.target.value});
   }
 
   handleDateChange(event) {
@@ -49,7 +49,7 @@ class SearchBar extends React.Component {
   }
 
   handleSearch(event) {
-    this.props.searchEventBrite(this.state.term, this.state.address, this.state.date, this.state.sortBy);
+    this.props.searchEventBrite(this.state.term, this.state.location, this.state.date, this.state.sortBy);
 
     event.preventDefault();
   }
@@ -71,7 +71,7 @@ class SearchBar extends React.Component {
         <div className="SearchBar">
         <div className="SearchBar-fields">
           <input className="first-search-bar" placeholder="Enter Keyword(s)" onChange={this.handleTermChange} />
-          <input placeholder="Where?" onChange={this.handleAddressChange} />
+          <input placeholder="Where?" onChange={this.handleLocationChange} />
           <select name="All Dates" onChange={this.handleDateChange}>
             <option value="today" >Today</option>
             <option value="tomorrow">Tomorrow</option>
@@ -89,6 +89,9 @@ class SearchBar extends React.Component {
         <ul>
           {this.renderSortByOptions()}
         </ul>
+      </div>
+      <div className="Sort-submit">
+        <a onClick={this.handleSearch}>Sort</a>
       </div>
     </div>
 

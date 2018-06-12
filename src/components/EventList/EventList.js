@@ -8,8 +8,8 @@ class EventList extends React.Component {
       <div className="EventList-container">
         <div className="Events">
         {
-          this.props.events.map(event => {
-            return <Event event={event} key={event.id} />
+          this.props.events.map(events => {
+            return <Event event={events} key={events.id} />
           })
         }
         </div>
