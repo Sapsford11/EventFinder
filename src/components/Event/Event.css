@@ -16,17 +16,16 @@
   background-color: #ffffff;
   font-family: Helvetica, Helvetica, Tahoma ,Arial,sans-serif;
   color: #666a73;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  height: 5rem;
+  border: 1px solid #ddd;
+  height: 4.4rem;
 }
 
 .Event .image-container {
-  height: 16.66rem;
+  height: 8rem;
   border-right: 1px solid #ddd;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
+  background-color: #fa4658;
 }
 
 .Event .date-time {

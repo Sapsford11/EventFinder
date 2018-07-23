@@ -68,12 +68,13 @@
 
 .Sort-submit {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  padding: .72rem 1.7rem;
 }
 
 .Sort-submit a {
   border-radius: 4px;
-  padding: .36rem .85rem;
+  padding: .6rem 1.4rem;
   background-color: #fa4658;
   color: #ffffff;
   font-weight: 600;
