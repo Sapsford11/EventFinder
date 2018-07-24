@@ -70,8 +70,8 @@ class SearchBar extends React.Component {
       <div className="Entire-Search-Wrapper">
         <div className="SearchBar">
         <div className="SearchBar-fields">
-          <input className="first-search-bar" placeholder="What? e.g festivals, golf, football" onChange={this.handleTermChange} />
-          <input placeholder="Where? e.g. city, country" onChange={this.handleLocationChange} />
+          <input className="first-search-bar" placeholder="Enter Keyword(s)" onChange={this.handleTermChange} />
+          <input placeholder="Where?" onChange={this.handleLocationChange} />
           <select name="All Dates" onChange={this.handleDateChange}>
             <option value="today" >Today</option>
             <option value="tomorrow">Tomorrow</option>
@@ -89,9 +89,6 @@ class SearchBar extends React.Component {
         <ul>
           {this.renderSortByOptions()}
         </ul>
-      </div>
-      <div className="Sort-submit">
-        <a onClick={this.handleSearch}>Sort</a>
       </div>
     </div>
 

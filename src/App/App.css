@@ -2,11 +2,13 @@
 
 html {
   font-size: 18px;
+  height: 100%;
 }
 
 @media only screen and (max-width: 560px) {
   html {
     font-size: 15px;
+    height: 100%;
   }
 }
 
@@ -32,6 +34,7 @@ input:focus {
 
 .App {
   font-family: 'Work Sans', sans-serif;
+  height: 100%;
 }
 
 h1 {
@@ -53,4 +56,8 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: .8rem;
   border-top: 4px solid #ADB0B6;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }

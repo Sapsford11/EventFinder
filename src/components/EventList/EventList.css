@@ -1,5 +1,5 @@
 .Events {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -7,6 +7,8 @@
 }
 
 .EventList-container {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   margin-top: 40px;
+  height: 100%, auto;
+  margin-bottom: 40px;
 }
