@@ -12,6 +12,8 @@ class EventList extends React.Component {
             return <Event event={events} key={events.id} />
           })
         }
+          <div className="Loader">
+          </div>
         </div>
       </div>
     );

@@ -26,5 +26,4 @@ const EventBrite = {
   }
 
 }
-
 export default EventBrite;
