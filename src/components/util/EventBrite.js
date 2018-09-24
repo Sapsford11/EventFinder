@@ -21,7 +21,7 @@ const EventBrite = {
           url: event.url
         }));
       } else {
-        return console.log('No results found.');
+         console.log('No results found.');
       }
     });
 
