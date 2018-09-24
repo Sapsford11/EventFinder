@@ -15,7 +15,7 @@ const EventBrite = {
       if (jsonResponse.events) {
         return jsonResponse.events.map(event => ({
           id: event.id,
-          logo: event.logo.url === null ? ('./no-image.png') : event.logo.url,
+          logo: event.logo ? event.logo.url : '../assets/no-image-available.png',
           date: event.start.local,
           name: event.name.text,
           url: event.url
