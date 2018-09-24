@@ -13,11 +13,11 @@
 
 .Event .event-card {
   padding: 2px 15px 15px 15px;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   font-family: Helvetica, Helvetica, Tahoma ,Arial,sans-serif;
   color: #666a73;
   border: 1px solid #ddd;
-  height: 4.4rem;
+  height: 7rem;
 }
 
 .Event .image-container {

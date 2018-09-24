@@ -10,16 +10,18 @@ const EventBrite = {
         Origin: `http://localhost:3000`,
       }
         }).then(response => {
-          return response.json();
+        return response.json();
         }).then(jsonResponse => {
       if (jsonResponse.events) {
         return jsonResponse.events.map(event => ({
           id: event.id,
-          logo: event.logo ? event.logo.url : '../assets/no-image-available.png',
+          logo: event.logo ? event.logo.url : 'https://craigsapsford.com/wp-content/uploads/2018/09/no-image-available.png',
           date: event.start.local,
           name: event.name.text,
           url: event.url
         }));
+      } else {
+        return 'No results found';
       }
     });
 
